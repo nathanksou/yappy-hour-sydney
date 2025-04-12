@@ -7,7 +7,7 @@ export const heroContent = {
     filter: "brightness(0.7)",
   },
   cta: {
-    text: "Get Your Ticket",
+    text: "Join Our Next Event",
     url: "",
   },
 };

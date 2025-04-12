@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: "%s | Yappy Hour Sydney",
   },
   description:
-    "Connect, explore and enjoy Sydney's vibrant urban scene with fellow adventure seekers through our diverse social events and activities.",
+    "Join our community of social explorers and make new friends through fun events and activities",
   keywords: [
     "Sydney social events",
     "social activities Sydney",
@@ -29,14 +29,14 @@ export const metadata: Metadata = {
   authors: [{ name: "Yappy Hour Sydney" }],
   creator: "Yappy Hour Sydney",
   publisher: "Yappy Hour Sydney",
-  metadataBase: new URL("https://yappyhour.com.au"),
+  metadataBase: new URL("https://yappy-hour-sydney.vercel.app"),
   openGraph: {
     type: "website",
     locale: "en_AU",
-    url: "https://yappyhour.com.au",
+    url: "https://yappy-hour-sydney.vercel.app",
     title: "Yappy Hour Sydney",
     description:
-      "Connect, explore and enjoy Sydney's vibrant urban scene with fellow adventure seekers",
+      "Join our community of social explorers and make new friends through fun events and activities",
     siteName: "Yappy Hour Sydney",
     images: [
       {
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Yappy Hour Sydney",
     description:
-      "Connect, explore and enjoy Sydney's vibrant urban scene with fellow adventure seekers",
+      "Join our community of social explorers and make new friends through fun events and activities",
     images: ["/images/twitter-image.jpg"],
     creator: "@yappyhoursydney",
   },
