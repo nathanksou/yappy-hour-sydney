@@ -1,4 +1,4 @@
-import { Target } from "lucide-react";
+import { FiTarget } from "react-icons/fi";
 import Image from "next/image";
 
 interface AboutSectionProps {
@@ -20,7 +20,7 @@ export function AboutSection({ mission, foundersImage }: AboutSectionProps) {
         <div className="flex flex-col md:flex-row gap-12 items-center mb-16">
           <div className="md:w-1/2">
             <div className="flex items-start mb-6">
-              <Target size={32} className="text-orange-500 mr-4 mt-1" />
+              <FiTarget size={32} className="text-orange-500 mr-4 mt-1" />
               <div>
                 <h3 className="text-2xl font-semibold mb-4">Our Mission</h3>
                 <p className="text-gray-700 leading-relaxed">{mission}</p>

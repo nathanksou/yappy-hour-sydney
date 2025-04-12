@@ -1,11 +1,5 @@
-import {
-  MountainSnow,
-  Utensils,
-  Beer,
-  MapPin,
-  GamepadIcon,
-  Mountain,
-} from "lucide-react";
+import { FiMapPin, FiCoffee, FiMap, FiNavigation } from "react-icons/fi";
+import { GiBeerStein, GiGameConsole } from "react-icons/gi";
 
 interface Event {
   title: string;
@@ -19,37 +13,37 @@ export function EventsSection() {
       title: "Bouldering Adventures",
       description:
         "Scale new heights with fellow climbers at Sydney's best indoor climbing venues.",
-      icon: <MountainSnow size={36} className="text-orange-500" />,
+      icon: <FiNavigation size={36} className="text-orange-500" />,
     },
     {
       title: "Mahjong Meetups",
       description:
         "Learn and play the ancient game in a relaxed, social environment.",
-      icon: <GamepadIcon size={36} className="text-orange-500" />,
+      icon: <GiGameConsole size={36} className="text-orange-500" />,
     },
     {
       title: "Bake Club",
       description:
         "Share recipes, techniques, and delicious treats with fellow baking enthusiasts.",
-      icon: <Utensils size={36} className="text-orange-500" />,
+      icon: <FiCoffee size={36} className="text-orange-500" />,
     },
     {
       title: "Restaurant Hopping",
       description:
         "Explore Sydney's diverse culinary scene with new friends at happy hour prices.",
-      icon: <Beer size={36} className="text-orange-500" />,
+      icon: <GiBeerStein size={36} className="text-orange-500" />,
     },
     {
       title: "Run Club",
       description:
         "Join our regular running group for scenic routes around Sydney's iconic spots.",
-      icon: <MapPin size={36} className="text-orange-500" />,
+      icon: <FiMapPin size={36} className="text-orange-500" />,
     },
     {
       title: "Sydney Hikes",
       description:
         "Explore beautiful trails and scenic lookouts around Sydney's stunning natural landscapes.",
-      icon: <Mountain size={36} className="text-orange-500" />,
+      icon: <FiMap size={36} className="text-orange-500" />,
     },
   ];
 

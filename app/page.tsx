@@ -1,8 +1,11 @@
+import { FaFacebook } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { RiInstagramFill } from "react-icons/ri";
+
 import { AboutSection } from "./components/AboutSection";
 import { HeroSection } from "./components/HeroSection";
 import { EventsSection } from "./components/EventsSection";
 import { GallerySection } from "./components/GallerySection";
-import { Facebook, Instagram, Twitter } from "lucide-react";
 import { ContactSection } from "./components/ContactSection";
 
 export default function Home() {
@@ -21,17 +24,17 @@ export default function Home() {
     {
       platform: "Instagram",
       url: "https://instagram.com/yappyhour",
-      icon: <Instagram size={24} className="text-orange-500" />,
+      icon: <RiInstagramFill size={24} className="text-orange-500" />,
     },
     {
       platform: "Facebook",
       url: "https://facebook.com/yappyhour",
-      icon: <Facebook size={24} className="text-orange-500" />,
+      icon: <FaFacebook size={24} className="text-orange-500" />,
     },
     {
-      platform: "Twitter",
+      platform: "X",
       url: "https://twitter.com/yappyhour",
-      icon: <Twitter size={24} className="text-orange-500" />,
+      icon: <FaSquareXTwitter size={24} className="text-orange-500" />,
     },
   ];
 

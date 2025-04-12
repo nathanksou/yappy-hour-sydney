@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { FiArrowRight } from "react-icons/fi";
 
 interface HeroSectionProps {
   ticketUrl: string;
@@ -33,7 +33,7 @@ export function HeroSection({ ticketUrl }: HeroSectionProps) {
           className="bg-orange-500 hover:bg-orange-600 text-white rounded-full px-8 py-6 text-lg font-medium transition-all duration-300 transform hover:scale-105"
           onClick={() => window.open(ticketUrl, "_blank")}
         >
-          Join Our Next Event <ArrowRight className="ml-2" size={18} />
+          Join Our Next Event <FiArrowRight className="ml-2" size={18} />
         </Button>
       </div>
     </section>
