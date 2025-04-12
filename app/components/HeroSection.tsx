@@ -3,13 +3,11 @@
 import { Button } from "@/components/ui/button";
 import { FiArrowRight } from "react-icons/fi";
 
-interface HeroSectionProps {
-  ticketUrl: string;
-}
+const ticketUrl = "";
 
-export function HeroSection({ ticketUrl }: HeroSectionProps) {
+export default function HeroSection() {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-muted">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
@@ -21,19 +19,20 @@ export function HeroSection({ ticketUrl }: HeroSectionProps) {
       ></div>
 
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
-        <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+        <h1 className="text-5xl md:text-6xl font-bold text-background mb-6 drop-shadow-lg">
           Yappy Hour Sydney
         </h1>
-        <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto drop-shadow-md">
-          Connect, explore and enjoy Sydney&apos;s vibrant urban scene with
-          fellow adventure seekers
+        <p className="text-xl md:text-2xl text-background mb-8 max-w-2xl mx-auto drop-shadow-md">
+          Join our community of social explorers and make new friends through
+          fun events and activities
         </p>
         <Button
           size="lg"
-          className="bg-orange-500 hover:bg-orange-600 text-white rounded-full px-8 py-6 text-lg font-medium transition-all duration-300 transform hover:scale-105"
+          className="bg-accent hover:bg-accent/90 text-background rounded-full px-8 py-6 text-lg font-medium transition-all duration-300 transform hover:scale-105"
           onClick={() => window.open(ticketUrl, "_blank")}
         >
-          Join Our Next Event <FiArrowRight className="ml-2" size={18} />
+          Get Your Ticket
+          <FiArrowRight />
         </Button>
       </div>
     </section>
