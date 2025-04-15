@@ -1,12 +1,6 @@
 import { FiCoffee, FiMap, FiMapPin, FiNavigation } from "react-icons/fi";
 import { GiBeerStein, GiGameConsole } from "react-icons/gi";
-import { Content, Icon, Image } from "../types";
-
-export type Activity = Content & Icon & { image: Image };
-
-export type ActivitiesContent = Content & {
-  activities: Activity[];
-};
+import { type ActivitiesContent } from "@/app/types";
 
 export const activitiesContent: ActivitiesContent = {
   title: "Our Activities",

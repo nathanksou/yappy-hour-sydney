@@ -1,26 +1,40 @@
 // Base types
-export type Title = {
+type Title = {
   title: string;
 };
 
-export type Content = Title & {
-  description: string;
-};
+type Content = Title & { description: string };
 
-export type URL = {
+type URL = {
   url: string;
 };
 
-export type Image = {
+type CTA = URL & { text: string };
+
+type Image = {
   src: string;
   alt: string;
 };
 
-export type Icon = {
+type Icon = {
   icon: React.ReactNode;
 };
 
-// Extended types
-export type CTA = URL & {
-  text: string;
+// Content-specific types
+export type AboutContent = Title & {
+  mission: Content;
+  foundersImage: Image;
 };
+
+export type Activity = Content & Icon & { image: Image };
+
+export type ActivitiesContent = Content & {
+  activities: Activity[];
+};
+
+export type HeroContent = Content & {
+  backgroundImage: URL;
+  cta: CTA;
+};
+
+export type SocialLink = URL & Icon & { platform: string; ariaLabel: string };

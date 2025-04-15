@@ -1,8 +1,6 @@
 import Image from "next/image";
-import {
-  type Activity,
-  activitiesContent,
-} from "@/app/data/activities-content";
+import { type Activity } from "@/app/types";
+import { activitiesContent } from "@/app/data/activities-content";
 
 const ActivityCard = ({ title, description, image, icon }: Activity) => (
   <div className="bg-gradient-to-br from-background to-muted rounded-2xl shadow-lg hover:shadow-xl border border-border transform transition-all duration-300 hover:-translate-y-1 overflow-hidden">

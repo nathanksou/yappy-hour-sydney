@@ -1,9 +1,4 @@
-import { Content, CTA, URL } from "../types";
-
-export type HeroContent = Content & {
-  backgroundImage: URL;
-  cta: CTA;
-};
+import { type HeroContent } from "@/app/types";
 
 export const heroContent: HeroContent = {
   title: "Yappy Hour Sydney",

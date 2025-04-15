@@ -1,5 +1,6 @@
 "use client";
-import { type SocialLink, socialLinks } from "@/app/data/social-links";
+import { type SocialLink } from "@/app/types";
+import { socialLinks } from "@/app/data/social-links";
 
 const SocialLink = ({ platform, url, icon, ariaLabel }: SocialLink) => (
   <a

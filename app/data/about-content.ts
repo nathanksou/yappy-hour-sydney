@@ -1,9 +1,4 @@
-import { Title, Content, Image } from "../types";
-
-export type AboutContent = Title & {
-  mission: Content;
-  foundersImage: Image;
-};
+import { type AboutContent } from "@/app/types";
 
 export const aboutContent: AboutContent = {
   title: "About Us",

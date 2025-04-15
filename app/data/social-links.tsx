@@ -1,9 +1,7 @@
 import { MdEmail } from "react-icons/md";
 import { FaFacebook, FaSquareXTwitter } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
-import { URL, Icon } from "../types";
-
-export type SocialLink = URL & Icon & { platform: string; ariaLabel: string };
+import { type SocialLink } from "@/app/types";
 
 export const socialLinks: SocialLink[] = [
   {
