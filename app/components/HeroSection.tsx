@@ -3,19 +3,10 @@
 import { Button } from "@/components/ui/button";
 import { FiArrowRight } from "react-icons/fi";
 import { heroContent } from "@/app/data/hero-content";
-
-const BackgroundImage = () => (
-  <div
-    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-    style={{
-      backgroundImage: `url(${heroContent.backgroundImage.url})`,
-      filter: "brightness(0.7)",
-    }}
-  />
-);
+import Image from "next/image";
 
 const HeroContent = () => (
-  <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
+  <div className="text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
     <h1 className="text-5xl md:text-6xl font-bold text-background mb-6 drop-shadow-lg">
       {heroContent.title}
     </h1>
@@ -36,8 +27,20 @@ const HeroContent = () => (
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-muted">
-      <BackgroundImage />
-      <HeroContent />
+      <div className="absolute inset-0">
+        <Image
+          src={heroContent.backgroundImage.src}
+          alt={heroContent.backgroundImage.alt}
+          fill
+          priority
+          className="object-cover"
+          style={{ filter: "brightness(0.7)" }}
+          aria-hidden="true"
+        />
+      </div>
+      <div className="relative flex-1 flex items-center justify-center">
+        <HeroContent />
+      </div>
     </section>
   );
 }

@@ -33,7 +33,7 @@ export type ActivitiesContent = Content & {
 };
 
 export type HeroContent = Content & {
-  backgroundImage: URL;
+  backgroundImage: Image;
   cta: CTA;
 };
 
