@@ -1,6 +1,27 @@
 import Image from "next/image";
 import { type Activity } from "@/app/types";
 import { activitiesContent } from "@/app/data/activities-content";
+import { FiCoffee, FiMap, FiMapPin, FiNavigation } from "react-icons/fi";
+import { GiBeerStein, GiGameConsole } from "react-icons/gi";
+
+const getIcon = (icon: string): React.ReactNode => {
+  switch (icon) {
+    case "navigation":
+      return <FiNavigation size={36} className="text-accent" />;
+    case "game":
+      return <GiGameConsole size={36} className="text-accent" />;
+    case "coffee":
+      return <FiCoffee size={36} className="text-accent" />;
+    case "beer":
+      return <GiBeerStein size={36} className="text-accent" />;
+    case "map-pin":
+      return <FiMapPin size={36} className="text-accent" />;
+    case "map":
+      return <FiMap size={36} className="text-accent" />;
+    default:
+      return null;
+  }
+};
 
 const ActivityCard = ({ title, description, image, icon }: Activity) => (
   <div className="bg-gradient-to-br from-background to-muted rounded-2xl shadow-lg hover:shadow-xl border border-border transform transition-all duration-300 hover:-translate-y-1 overflow-hidden">
@@ -16,7 +37,7 @@ const ActivityCard = ({ title, description, image, icon }: Activity) => (
     </div>
     <div className="p-6">
       <div className="flex items-center gap-4 mb-4">
-        <div className="bg-accent/10 p-3 rounded-full">{icon}</div>
+        <div className="bg-accent/10 p-3 rounded-full">{getIcon(icon)}</div>
         <h3 className="text-xl font-semibold text-foreground">{title}</h3>
       </div>
       <p className="text-muted-foreground">{description}</p>

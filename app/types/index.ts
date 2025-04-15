@@ -17,7 +17,7 @@ type Image = {
 };
 
 type Icon = {
-  icon: React.ReactNode;
+  icon: string;
 };
 
 // Content-specific types
@@ -37,4 +37,8 @@ export type HeroContent = Content & {
   cta: CTA;
 };
 
-export type SocialLink = URL & Icon & { platform: string; ariaLabel: string };
+export type SocialLink = URL & { platform: string; ariaLabel: string };
+
+export type ContactContent = Content & {
+  socialLinks: SocialLink[];
+};

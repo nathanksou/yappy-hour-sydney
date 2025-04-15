@@ -1,5 +1,3 @@
-import { FiCoffee, FiMap, FiMapPin, FiNavigation } from "react-icons/fi";
-import { GiBeerStein, GiGameConsole } from "react-icons/gi";
 import { type ActivitiesContent } from "@/app/types";
 
 export const activitiesContent: ActivitiesContent = {
@@ -15,7 +13,7 @@ export const activitiesContent: ActivitiesContent = {
         src: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
         alt: "Group of people at a climbing gym",
       },
-      icon: <FiNavigation size={36} className="text-accent" />,
+      icon: "navigation",
     },
     {
       title: "Mahjong Meetups",
@@ -25,7 +23,7 @@ export const activitiesContent: ActivitiesContent = {
         src: "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
         alt: "People playing board games",
       },
-      icon: <GiGameConsole size={36} className="text-accent" />,
+      icon: "game",
     },
     {
       title: "Bake Club",
@@ -35,7 +33,7 @@ export const activitiesContent: ActivitiesContent = {
         src: "https://images.unsplash.com/photo-1622556498246-755f44ca76f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
         alt: "People baking together",
       },
-      icon: <FiCoffee size={36} className="text-accent" />,
+      icon: "coffee",
     },
     {
       title: "Restaurant Hopping",
@@ -45,7 +43,7 @@ export const activitiesContent: ActivitiesContent = {
         src: "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
         alt: "Group at a restaurant",
       },
-      icon: <GiBeerStein size={36} className="text-accent" />,
+      icon: "beer",
     },
     {
       title: "Run Club",
@@ -55,7 +53,7 @@ export const activitiesContent: ActivitiesContent = {
         src: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
         alt: "Group of runners",
       },
-      icon: <FiMapPin size={36} className="text-accent" />,
+      icon: "map-pin",
     },
     {
       title: "Sydney Hikes",
@@ -65,7 +63,7 @@ export const activitiesContent: ActivitiesContent = {
         src: "https://images.unsplash.com/photo-1571008887538-b36bb32f4571?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
         alt: "Group on a hike",
       },
-      icon: <FiMap size={36} className="text-accent" />,
+      icon: "map",
     },
   ],
 };
