@@ -1,4 +1,11 @@
-export const aboutContent = {
+import { Title, Content, Image } from "../types";
+
+export type AboutContent = Title & {
+  mission: Content;
+  foundersImage: Image;
+};
+
+export const aboutContent: AboutContent = {
   title: "About Us",
   mission: {
     title: "Our Mission",

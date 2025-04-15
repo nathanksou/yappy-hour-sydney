@@ -1,7 +1,6 @@
 import AboutSection from "./components/AboutSection";
 import HeroSection from "./components/HeroSection";
-import EventsSection from "./components/EventsSection";
-import GallerySection from "./components/GallerySection";
+import ActivitiesSection from "./components/ActivitiesSection";
 import ContactSection from "./components/ContactSection";
 
 export default function Home() {
@@ -9,8 +8,7 @@ export default function Home() {
     <main>
       <HeroSection />
       <AboutSection />
-      <EventsSection />
-      <GallerySection />
+      <ActivitiesSection />
       <ContactSection />
     </main>
   );

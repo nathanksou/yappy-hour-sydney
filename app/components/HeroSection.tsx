@@ -8,9 +8,8 @@ const BackgroundImage = () => (
   <div
     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
     style={{
-      backgroundImage: `url('${heroContent.backgroundImage.url}')`,
-      backgroundPosition: "center",
-      filter: heroContent.backgroundImage.filter,
+      backgroundImage: `url(${heroContent.backgroundImage.url})`,
+      filter: "brightness(0.7)",
     }}
   />
 );
